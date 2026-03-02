@@ -1,9 +1,14 @@
-import { navigateTo } from "./router.js";
+import { render } from "./router.js";
 
 
-// When the app is loaded, check where is it the user
+// When the app is loaded
 window.addEventListener('DOMContentLoaded', () => {
-    // If it's the first time, load the current routes or the login routes
-    const currentPath = window.location.pathname || '/';
-    navigateTo(currentPath);
+    if (!window.location.hash || window.location.has === '#') {
+        // Set the hash, if there's not
+        // This block of code will trigger the 'haschange' listener in the 'router.js' file
+        window.location.hash = '/';
+    } else {
+        // Render the current hash, if there is
+        render();
+    }
 });

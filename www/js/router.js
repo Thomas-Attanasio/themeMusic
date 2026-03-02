@@ -11,18 +11,19 @@ const routes = {
 
 // Function to change the view
 export const navigateTo = (path) => {
-    // Change the URL without reloading the page
-    window.history.pushState({}, path, window,location.origin + path);
-
-    // Render logic
-    render(path);
+    window.location.hash = path;
 };
 
-const render = (path) => {
+const render = () => {
     const appContainer = document.getElementById('app');
 
     // Clear the container
     appContainer.innerHTML = '';
+
+
+    // Obtaine the current hash (es. '#/register') and remove the '#' symbol
+    // If the has is empty, use '/' as default
+    const path = window.location.hash.replace('#', '') || '/';
 
 
     // Find the relative routes function
@@ -37,7 +38,8 @@ const render = (path) => {
 };
 
 
-// Manage the browser and smartphone back button
-window.addEventListener('popstate', () => {
-    render(window.location.pathname);
-});
+// Mange the has changes
+window.addEventListener('hashchange', render);
+
+
+export { render };

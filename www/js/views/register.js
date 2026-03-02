@@ -1,6 +1,6 @@
 export const initRegister = (container) => {
     // HTML code
-    `
-        <h1>EXAMPLE CODE</h1>
+    container.innerHTML = `
+        <h1>REGISTER PAGE EXAMPLE</h1>
     `;
 };
