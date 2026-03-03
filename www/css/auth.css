@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Agrandir', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #04141b;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Main container */
+.mainContainer {
+    background-color: #04141b;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* Header */
+.headerContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.headerContainer h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.headerContainer p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+
+/* Login container */
+.loginContainer {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+}
+
+.loginContainer h1 {
+    color: #80d8ff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* Form, input and label */
+#loginForm {
+    width: 100%;
+}
+
+.inputGroup {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.inputGroup label {
+    color: #b3b3b3;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.inputGroup input {
+    width: 100%;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.inputGroup input:focus {
+    background-color: #252525;
+    border-color: #80d8ff;
+    box-shadow: 0 0 10px rgba(128, 216, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+
+
+
+/* Error message */
+.errorMessage {
+    display: block;
+    color: #ff4d4d;
+    min-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+
+
+
+/* Button */
+#loginButton {
+    background-color: #80d8ff;
+    color: #04141b;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(128, 216, 255, 0.3);
+    transition: transform 0.1s ease, background-color 0.2s;
+}
+
+#loginButton:active {
+    background-color: #65c0e6;
+    transform: scale(0.96);
+}
+
+
+
+
+/*  Registration link*/
+.registrationLink {
+    color: #b3b3b3;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#goToRegister {
+    color: #80d8ff;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
