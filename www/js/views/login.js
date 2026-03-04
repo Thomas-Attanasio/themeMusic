@@ -15,7 +15,7 @@ export const initLogin = (container) => {
                 <form id='loginForm'>
                     <div class='inputGroup'>
                         <label for='email'>Email</label>
-                        <input type='text' id='email' placeholder='Enter your email' required>
+                        <input type='email' id='email' placeholder='Enter your email' required>
 
                         <span class='errorMessage' id='emailError'></span>
                     </div>
@@ -27,10 +27,10 @@ export const initLogin = (container) => {
                         <span class='errorMessage' id='passwordError'></span>
                     </div>
 
-                    <button type='submit' id='loginButton'>Login</button>
+                    <button type='submit' class='formButton' id='loginButton'>Login</button>
                 </form>
 
-                <p class='registrationLink'>Don't have an account? <a href='#' id='goToRegister'>Sign Up</a></p>
+                <p class='formLink'>Don't have an account? <a href='#' id='goToRegister'>Sign Up</a></p>
             </div>
         </div>
     `;

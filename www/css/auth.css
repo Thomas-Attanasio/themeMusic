@@ -54,14 +54,16 @@ body {
 
 
 
-/* Login container */
-.loginContainer {
+/* Login and register container */
+.loginContainer,
+.registerContainer {
     width: 100%;
     max-width: 400px;
     margin-top: 40px;
 }
 
-.loginContainer h1 {
+.loginContainer h1,
+.registerContainer h1 {
     color: #80d8ff;
     font-size: 24px;
     font-weight: bold;
@@ -125,7 +127,7 @@ body {
 
 
 /* Button */
-#loginButton {
+.formButton {
     background-color: #80d8ff;
     color: #04141b;
     width: 100%;
@@ -143,7 +145,7 @@ body {
     transition: transform 0.1s ease, background-color 0.2s;
 }
 
-#loginButton:active {
+.formButton:active {
     background-color: #65c0e6;
     transform: scale(0.96);
 }
@@ -152,14 +154,15 @@ body {
 
 
 /*  Registration link*/
-.registrationLink {
+.formLink {
     color: #b3b3b3;
     font-size: 14px;
     text-align: center;
     margin-top: 10px;
 }
 
-#goToRegister {
+#goToRegister,
+#goToLogin {
     color: #80d8ff;
     font-weight: bold;
     text-decoration: underline;

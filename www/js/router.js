@@ -4,7 +4,7 @@ import { initRegister } from "./views/register.js";
 
 // Define the routes
 const routes = {
-    '/': initLogin,
+    '/login': initLogin,
     '/register': initRegister
 };
 
@@ -22,8 +22,8 @@ const render = () => {
 
 
     // Obtaine the current hash (es. '#/register') and remove the '#' symbol
-    // If the has is empty, use '/' as default
-    const path = window.location.hash.replace('#', '') || '/';
+    // If the hash is empty, use '/' (login path) as default
+    const path = window.location.hash.replace('#', '') || '/login';
 
 
     // Find the relative routes function
