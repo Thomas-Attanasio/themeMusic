@@ -32,6 +32,8 @@ export const initLogin = (container) => {
                         <span class='errorMessage' id='passwordError'></span>
                     </div>
 
+                    <span class='errorMessage' id='genericError'></span>
+
                     <button type='submit' class='formButton' id='loginButton'>Login</button>
                 </form>
 
