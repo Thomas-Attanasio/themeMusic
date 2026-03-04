@@ -1,6 +1,11 @@
 import { navigateTo } from '../router.js';
+import { loadCSS } from '../helpers.js';
 
 export const initLogin = (container) => {
+    // Manually load the CSS file
+    loadCSS('css/auth.css');
+
+
     // HTML code
     container.innerHTML = `
         <div class='mainContainer'>

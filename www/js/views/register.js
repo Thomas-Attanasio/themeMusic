@@ -1,6 +1,11 @@
+import { loadCSS } from "../helpers.js";
 import { navigateTo } from "../router.js";
 
 export const initRegister = (container) => {
+    // Manually load the CSS file
+    loadCSS('css/auth.css');
+
+
     // HTML code
     container.innerHTML = `
         <div class='mainContainer'>
