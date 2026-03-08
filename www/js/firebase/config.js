@@ -1,6 +1,8 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js';
-import { getFirestore, doc, setDoc } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
+import {
+    getFirestore, doc, setDoc, query, where, collection, getDocs 
+} from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
 import { firebaseConfig } from '../secret.js';
 
 
@@ -20,5 +22,9 @@ export {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     doc,
-    setDoc
+    setDoc,
+    query,
+    where,
+    collection,
+    getDocs
 };
